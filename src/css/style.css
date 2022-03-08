@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.face{
+    width: 200px;
+    height: 200px;
+    margin: 0px 20px;
+    border-radius: 20px;
+}
+#red{
+    background-color: #a12525;
+}
+#blue{
+    background-color: #0850bd;
+}
+#green{
+    background-color: #008000;
+}
+#yellow{
+    background-color: #ffff00;
+}
+
+/* ANIMATION */
+.animationred{
+    animation: brigthColorred 3s ease-in;
+}
+.animationblue{
+    animation: brigthColorblue 3s ease-in;
+}
+.animationyellow{
+    animation: brigthColoryellow 3s ease-in;
+}
+.animationgreen{
+    animation: brigthColorgreen 3s ease-in;
+}
+/* ANIMATION */
