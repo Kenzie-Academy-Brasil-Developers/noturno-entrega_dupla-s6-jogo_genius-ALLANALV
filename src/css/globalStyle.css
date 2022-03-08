@@ -7,43 +7,40 @@ body,div{
 @keyframes brigthColorgreen {
     from{
         box-shadow: 0px 0px 0px green;
-        width: 230px;
     }
     to{
         box-shadow: 20px 10px 50px green;
-        width: 230px;
+        background-color: #04ff04;
     }
 }
 
 @keyframes brigthColorred {
     from{
         box-shadow: 0px 0px 0px #a12525;
-        width: 230px;
     }
     to{
         box-shadow: 20px 10px 50px #a12525;
-        width: 230px;
+        background-color: #e90000;
     }
 }
 
 @keyframes brigthColoryellow {
     from{
         box-shadow: 0px 0px 0px #ffff00;
-        width: 230px;
     }
     to{
         box-shadow: 20px 10px 50px #ffff00;
-        width: 230px;
+        background-color: #fff350;
     }
 }
 
 @keyframes brigthColorblue {
     from{
         box-shadow: 0px 0px 0px #0850bd;
-        width: 230px;
+        
     }
     to{
         box-shadow: 20px 10px 50px #0850bd;
-        width: 230px;
+        background-color: #05b0e9;
     }
 }

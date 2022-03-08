@@ -1,8 +1,3 @@
-const box_red = document.getElementById('red');
-const box_blue = document.getElementById('blue');
-const box_green = document.getElementById('green');
-const box_yellow = document.getElementById('yellow');
-
 class Genius {
     constructor() {
         this.random = [];
@@ -44,29 +39,90 @@ class Genius {
 
 const machine = new Genius()
 
-function brilha(elem) {
-    for (let index = 0; index < machine.random.length; index++) {
+export { machine }
+// function brilha(elem) {
+//     for (let index = 0; index < machine.random.length; index++) {
+// 
+//         if (elem.id.toLowerCase() === machine.random[index].toLowerCase()) {
+//             elem.classList.add('animation' + elem.id)
+//         }
+//     }
+// }
 
-        if (elem.id.toLowerCase() === machine.random[index].toLowerCase()) {
-            elem.classList.add('animation' + elem.id)
-        }
-    }
-}
+// box_blue.addEventListener('click', () => {
+//     machine.sequenceColors()
+//     console.log('array Machine:' + ' ' + machine.random)
+//     arr_person.push('blue')
+//     console.log(arr_person)
+//     for (let index = 0; index < machine.random.length; index++) {
+//         if (machine.random[index].toLowerCase() === arr_person[index].toLowerCase()) {
+//             console.log('sequence equals')
+//         } else {
+//             console.log('sequece wrong!')
+//             machine.random = []
+//             arr_person = []
+//         }
+//     }
+//     console.log('------')
+//     console.log(machine.random)
+//     console.log(arr_person)
+// });
+// 
+// box_green.addEventListener('click', () => {
+//     machine.sequenceColors()
+//     console.log('array Machine:' + ' ' + machine.random)
+//     arr_person.push('green')
+//     console.log(arr_person)
+//     for (let index = 0; index < machine.random.length; index++) {
+//         if (machine.random[index].toLowerCase() === arr_person[index].toLowerCase()) {
+//             console.log('sequence equals')
+//         } else {
+//             console.log('sequece wrong!')
+//             machine.random = []
+//             arr_person = []
+//         }
+//     }
+//     console.log('------')
+//     console.log(machine.random)
+//     console.log(arr_person)
+// })
+// 
+// box_red.addEventListener('click', () => {
+//     machine.sequenceColors();
+//     console.log('array Machine:' + ' ' + machine.random)
+//     arr_person.push('red')
+//     console.log(arr_person)
+//     console.log(arr_person)
+//     for (let index = 0; index < machine.random.length; index++) {
+//         if (machine.random[index].toLowerCase() === arr_person[index].toLowerCase()) {
+//             console.log('sequence equals')
+//         } else {
+//             console.log('sequece wrong!')
+//             machine.random = []
+//             arr_person = []
+//         }
+//     }
+//     console.log('------')
+//     console.log(machine.random)
+//     console.log(arr_person)
+// })
+// box_yellow.addEventListener('click', () => {
+//     machine.sequenceColors();
+//     console.log('array Machine:' + ' ' + machine.random)
+//     arr_person.push('yellow')
+//     console.log(arr_person)
+//     for (let index = 0; index < machine.random.length; index++) {
+//         if (machine.random[index].toLowerCase() === arr_person[index].toLowerCase()) {
+//             console.log('sequence equals')
+//         } else {
+//             console.log('sequece wrong!')
+//             machine.random = []
+//             arr_person = []
+//         }
+//     }
+//     console.log('------')
+//     console.log(machine.random)
+//     console.log(arr_person)
+// })
 
-machine.sequenceColors()
-
-brilha(box_red);
-brilha(box_green);
-brilha(box_yellow);
-brilha(box_blue);
-
-setTimeout(() => {
-    machine.sequenceColors()
-
-    brilha(box_red);
-    brilha(box_green);
-    brilha(box_yellow);
-    brilha(box_blue);
-
-}, 3000)
 
