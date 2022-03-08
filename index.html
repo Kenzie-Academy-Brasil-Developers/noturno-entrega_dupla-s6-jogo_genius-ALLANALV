@@ -9,10 +9,21 @@
     <title>Genius</title>
 </head>
     <body>
-        <div class="face" id="red"></div>
-        <div class="face" id="blue"></div>
-        <div class="face" id="green"></div>
-        <div class="face" id="yellow"></div>
+        <section>
+            <div class="center">
+                <h1>Vamos Jogar</h1>
+
+                <form>
+                    <p>nome do jogador</p>
+                    <input type="text" required>
+                    <input type="submit" id="btn-send" value="start">
+                </form>
+            </div>
+            <div id="blue" class="up"></div>
+            <div id="red" class="side up"></div>
+            <div id="green" class="down"></div>
+            <div id="yellow" class="side down"></div>
+        </section>
 
         <script type="module" src="./src/js/test_player.js"></script>
         <script type="module"src="./src/js/test_machine.js"></script>
