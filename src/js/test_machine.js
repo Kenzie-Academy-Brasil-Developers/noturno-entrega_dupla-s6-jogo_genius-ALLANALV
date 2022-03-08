@@ -1,7 +1,7 @@
-const click_red = document.getElementById('red');
-const click_blue = document.getElementById('blue');
-const click_green = document.getElementById('green');
-const click_yellow = document.getElementById('yellow');
+const box_red = document.getElementById('red');
+const box_blue = document.getElementById('blue');
+const box_green = document.getElementById('green');
+const box_yellow = document.getElementById('yellow');
 
 class Genius {
     constructor() {
@@ -12,7 +12,7 @@ class Genius {
             return target_color
         }
 
-        this.brigthColor = function () {
+        this.sequenceColors = function () {
 
             const variable_result = this.randomGame()
             if (variable_result === 0) {
@@ -51,12 +51,22 @@ function brilha(elem) {
             elem.classList.add('animation' + elem.id)
         }
     }
-    //elem.classList.remove('animation' + elem.id)
 }
 
-machine.brigthColor()
-console.log(machine.random)
-brilha(click_red);
-brilha(click_green);
-brilha(click_yellow);
-brilha(click_blue);
+machine.sequenceColors()
+
+brilha(box_red);
+brilha(box_green);
+brilha(box_yellow);
+brilha(box_blue);
+
+setTimeout(() => {
+    machine.sequenceColors()
+
+    brilha(box_red);
+    brilha(box_green);
+    brilha(box_yellow);
+    brilha(box_blue);
+
+}, 3000)
+

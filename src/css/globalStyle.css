@@ -10,7 +10,7 @@ body,div{
         width: 230px;
     }
     to{
-        box-shadow: 20px 0px 15px green;
+        box-shadow: 20px 10px 50px green;
         width: 230px;
     }
 }
@@ -21,7 +21,7 @@ body,div{
         width: 230px;
     }
     to{
-        box-shadow: 20px 0px 15px #a12525;
+        box-shadow: 20px 10px 50px #a12525;
         width: 230px;
     }
 }
@@ -32,7 +32,7 @@ body,div{
         width: 230px;
     }
     to{
-        box-shadow: 20px 0px 15px #ffff00;
+        box-shadow: 20px 10px 50px #ffff00;
         width: 230px;
     }
 }
@@ -43,7 +43,7 @@ body,div{
         width: 230px;
     }
     to{
-        box-shadow: 20px 0px 15px #0850bd;
+        box-shadow: 20px 10px 50px #0850bd;
         width: 230px;
     }
 }
