@@ -23,6 +23,7 @@ function verification() {
             console.log(machine.random.length)
         for (let counter = 0; counter < player.playerArray.length; counter++) {
                 if (machine.random[counter].toLowerCase() !== player.playerArray[counter].toLowerCase() ) {
+                machine.random = []
                 endGame()
                 }
             }

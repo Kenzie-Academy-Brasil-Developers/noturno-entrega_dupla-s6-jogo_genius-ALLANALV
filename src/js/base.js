@@ -56,55 +56,103 @@ function endGame() {
     divCenter.appendChild(btn_play_again);
         
         
-    // btn_play_again.addEventListener('click', function(){
+    btn_play_again.addEventListener('click', playAgain)
     
-    //     divCenter.innerHTML = ""
+        // divCenter.innerHTML = ""
         
-    //     const h1 = document.createElement('h1')
-    //     const form = document.createElement('form')
-    //     const p = document.createElement('p')
-    //     const inputText = document.createElement('input')
-    //     const inputSubmit = document.createElement('input')
+        // const h1 = document.createElement('h1')
+        // const form = document.createElement('form')
+        // const p = document.createElement('p')
+        // const inputText = document.createElement('input')
+        // const inputSubmit = document.createElement('input')
         
-    //     inputText.setAttribute('type', 'text')
-    //     inputSubmit.setAttribute('type', 'submit')
-    //     inputSubmit.setAttribute('id', 'btn-send')
-    //     inputSubmit.setAttribute('value', 'start')
+        // inputText.setAttribute('type', 'text')
+        // inputSubmit.setAttribute('type', 'submit')
+        // inputSubmit.setAttribute('id', 'btn-send')
+        // inputSubmit.setAttribute('value', 'start')
 
-    //     h1.innerText = "Vamos Jogar"
-    //     p.innerText = "nome do jogador"
+        // h1.innerText = "Vamos Jogar"
+        // p.innerText = "nome do jogador"
 
-    //     form.appendChild(p)
-    //     form.appendChild(inputText)
-    //     form.appendChild(inputSubmit)
-    //     divCenter.appendChild(h1)
-    //     divCenter.appendChild(form)
+        // form.appendChild(p)
+        // form.appendChild(inputText)
+        // form.appendChild(inputSubmit)
+        // divCenter.appendChild(h1)
+        // divCenter.appendChild(form)
 
 
-    //     inputSubmit.addEventListener('click', function(){
+        // inputSubmit.addEventListener('click', function(){
             
-    //         divCenter.innerHTML = ""
-    //         const box_blue = document.getElementById('blue');
-    //         const box_red = document.getElementById('red');
-    //         const box_yellow = document.getElementById('yellow');
-    //         const box_green = document.getElementById('green');
+        //     divCenter.innerHTML = ""
+        //     const box_blue = document.getElementById('blue');
+        //     const box_red = document.getElementById('red');
+        //     const box_yellow = document.getElementById('yellow');
+        //     const box_green = document.getElementById('green');
     
-    //         box_blue.classList.remove('animationblue');
-    //         box_red.classList.remove('animationred');
-    //         box_yellow.classList.remove('animationyellow');
-    //         box_green.classList.remove('animationgreen');
+        //     box_blue.classList.remove('animationblue');
+        //     box_red.classList.remove('animationred');
+        //     box_yellow.classList.remove('animationyellow');
+        //     box_green.classList.remove('animationgreen');
             
-    //         player.playerArray = []
-    //         machine.random = []
+        //     player.playerArray = []
 
-    //         setTimeout(function () {
-    //             machine.sequenceColors()
-    //             showSequenceColors()
-    //         }, 500)
-    //     })
+        //     setTimeout(function () {
+        //         machine.sequenceColors()
+        //         showSequenceColors()
+        //     }, 500)
+        // })
 
-    // })
+    
 
+}
+
+function playAgain () {
+    const divCenter = document.querySelector('.center')
+    divCenter.innerHTML = ""
+        
+        const h1 = document.createElement('h1')
+        const form = document.createElement('form')
+        const p = document.createElement('p')
+        const inputText = document.createElement('input')
+        const inputSubmit = document.createElement('input')
+        
+        inputText.setAttribute('type', 'text')
+        inputSubmit.setAttribute('type', 'submit')
+        inputSubmit.setAttribute('id', 'btn-send')
+        inputSubmit.setAttribute('value', 'start')
+
+        h1.innerText = "Vamos Jogar"
+        p.innerText = "nome do jogador"
+
+        form.appendChild(p)
+        form.appendChild(inputText)
+        form.appendChild(inputSubmit)
+        divCenter.appendChild(h1)
+        divCenter.appendChild(form)
+
+        inputSubmit.addEventListener('click', showFormAgain)
+}
+
+function showFormAgain () {
+    const divCenter = document.querySelector('.center')
+    divCenter.innerHTML = ""
+            const box_blue = document.getElementById('blue');
+            const box_red = document.getElementById('red');
+            const box_yellow = document.getElementById('yellow');
+            const box_green = document.getElementById('green');
+    
+            box_blue.classList.remove('animationblue');
+            box_red.classList.remove('animationred');
+            box_yellow.classList.remove('animationyellow');
+            box_green.classList.remove('animationgreen');
+            
+            player.playerArray = []
+
+            setTimeout(function () {
+                machine.sequenceColors()
+                showSequenceColors()
+            }, 500)
+        
 }
 
 export { showSequenceColors, showAgain, endGame }
