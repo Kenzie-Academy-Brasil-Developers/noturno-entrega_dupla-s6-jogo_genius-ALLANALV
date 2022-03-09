@@ -24,6 +24,9 @@ div{
     left: 41.5%;
     bottom: 42%;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .center h1{
     text-align: center;
@@ -34,6 +37,10 @@ div{
     align-items: center;
     width: 90%;
     margin: auto;
+}
+
+.center p {
+    text-align: center;
 }
 .center form p{}
 .center form input{
