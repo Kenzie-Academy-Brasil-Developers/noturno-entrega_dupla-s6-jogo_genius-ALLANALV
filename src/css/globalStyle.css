@@ -6,41 +6,33 @@ body,div{
 
 @keyframes brigthColorgreen {
     from{
-        box-shadow: 0px 0px 0px green;
     }
     to{
-        box-shadow: 20px 10px 50px green;
         background-color: #04ff04;
     }
 }
 
 @keyframes brigthColorred {
     from{
-        box-shadow: 0px 0px 0px #a12525;
     }
     to{
-        box-shadow: 20px 10px 50px #a12525;
         background-color: #e90000;
     }
 }
 
 @keyframes brigthColoryellow {
     from{
-        box-shadow: 0px 0px 0px #ffff00;
     }
     to{
-        box-shadow: 20px 10px 50px #ffff00;
         background-color: #fff350;
     }
 }
 
 @keyframes brigthColorblue {
     from{
-        box-shadow: 0px 0px 0px #0850bd;
         
     }
     to{
-        box-shadow: 20px 10px 50px #0850bd;
         background-color: #05b0e9;
     }
 }

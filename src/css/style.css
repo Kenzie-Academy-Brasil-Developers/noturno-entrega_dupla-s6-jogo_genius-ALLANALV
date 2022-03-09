@@ -15,6 +15,7 @@ section{
 div{
     width: 335px;
     height: 225px;
+    margin: 10px;
 }
 .center{
     background-color: #fff;
@@ -59,14 +60,14 @@ div{
     transition:  1s background ;
 }
 #blue:hover{
-    background-color: #05b0e9;
+    cursor: pointer;
 }
 #red{
     background-color: #8b0000;
     transition:  1s background ;
 }
 #red:hover{
-    background-color: #e90000;
+    cursor: pointer;
 }
 
 #green{
@@ -74,7 +75,7 @@ div{
     transition:  1s background ;
 }
 #green:hover{
-    background-color: #04ff04;
+   cursor: pointer;
 }
 
 #yellow{
@@ -82,7 +83,7 @@ div{
     transition:  1s background ;
 }
 #yellow:hover{
-    background-color: #fff350;
+    cursor: pointer;
 }
 
 /* ANIMATION */
