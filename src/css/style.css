@@ -77,7 +77,7 @@ div{
 
 #blue{
     background-color: #00008b;
-    transition:  1s background ;
+    transition: 1s background ;
 }
 #blue:hover{
     cursor: pointer;
@@ -92,7 +92,7 @@ div{
 
 #green{
     background-color: #006400;
-    transition:  1s background ;
+    transition: 1s background ;
 }
 #green:hover{
    cursor: pointer;
@@ -108,15 +108,15 @@ div{
 
 /* ANIMATION */
 .animationred{
-    animation: brigthColorred 3s ease-in;
+    animation: brigthColorred 1s ease-in;
 }
 .animationblue{
-    animation: brigthColorblue 3s ease-in;
+    animation: brigthColorblue 1s ease-in;
 }
 .animationyellow{
-    animation: brigthColoryellow 3s ease-in;
+    animation: brigthColoryellow 1s ease-in;
 }
 .animationgreen{
-    animation: brigthColorgreen 3s ease-in;
+    animation: brigthColorgreen 1s ease-in;
 }
 /* ANIMATION */
