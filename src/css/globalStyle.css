@@ -6,33 +6,43 @@ body,div{
 
 @keyframes brigthColorgreen {
     from{
+        
     }
     to{
+       
         background-color: #04ff04;
     }
 }
 
 @keyframes brigthColorred {
-    from{
-    }
+   from {
+
+   }
+    
     to{
+        
         background-color: #e90000;
     }
 }
 
 @keyframes brigthColoryellow {
-    from{
-    }
+   from {
+
+   }
+    
     to{
+       
         background-color: #fff350;
     }
 }
 
 @keyframes brigthColorblue {
     from{
-        
+
     }
+    
     to{
+    
         background-color: #05b0e9;
     }
 }
