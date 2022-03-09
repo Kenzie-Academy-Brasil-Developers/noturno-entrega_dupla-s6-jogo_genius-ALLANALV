@@ -7,7 +7,6 @@ const box_yellow = document.getElementById('yellow');
 const box_green = document.getElementById('green')
 
 function showSequenceColors() {
-    let time = 500;
     machine.random.forEach((value) => {
         if (value.toLowerCase() === box_blue.id.toLowerCase()) {
             box_blue.classList.add('animationblue');
@@ -31,7 +30,6 @@ function showAgain() {
     setTimeout(function () {
 
         machine.sequenceColors()
-        console.log('array machine' + machine.random)
         showSequenceColors()
     }, 500)
 }
