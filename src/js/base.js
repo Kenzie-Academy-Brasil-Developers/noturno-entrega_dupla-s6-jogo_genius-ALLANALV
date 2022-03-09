@@ -1,4 +1,5 @@
 import { machine } from "./test_machine.js";
+import { player } from "./test_player.js";
 
 const box_blue = document.getElementById('blue');
 const box_red = document.getElementById('red');
@@ -49,16 +50,60 @@ function endGame() {
     paragraph.innerHTML = "Você errou a sequência!"
     divCenter.appendChild(paragraph)
 
-    setTimeout((() => {
-        const section = document.querySelector('section');
-        section.innerHTML = ''
+    const btn_play_again = document.createElement('button');
+    btn_play_again.innerText = 'jogar novamente'
 
-        const btn_play_again = document.createElement('button');
-        btn_play_again.innerText = 'jogar novamente'
+    divCenter.appendChild(btn_play_again);
+        
+        
+    // btn_play_again.addEventListener('click', function(){
+    
+    //     divCenter.innerHTML = ""
+        
+    //     const h1 = document.createElement('h1')
+    //     const form = document.createElement('form')
+    //     const p = document.createElement('p')
+    //     const inputText = document.createElement('input')
+    //     const inputSubmit = document.createElement('input')
+        
+    //     inputText.setAttribute('type', 'text')
+    //     inputSubmit.setAttribute('type', 'submit')
+    //     inputSubmit.setAttribute('id', 'btn-send')
+    //     inputSubmit.setAttribute('value', 'start')
 
-        section.appendChild(btn_play_again);
-        section.classList.add('box_button')
-    }), 2000)
+    //     h1.innerText = "Vamos Jogar"
+    //     p.innerText = "nome do jogador"
+
+    //     form.appendChild(p)
+    //     form.appendChild(inputText)
+    //     form.appendChild(inputSubmit)
+    //     divCenter.appendChild(h1)
+    //     divCenter.appendChild(form)
+
+
+    //     inputSubmit.addEventListener('click', function(){
+            
+    //         divCenter.innerHTML = ""
+    //         const box_blue = document.getElementById('blue');
+    //         const box_red = document.getElementById('red');
+    //         const box_yellow = document.getElementById('yellow');
+    //         const box_green = document.getElementById('green');
+    
+    //         box_blue.classList.remove('animationblue');
+    //         box_red.classList.remove('animationred');
+    //         box_yellow.classList.remove('animationyellow');
+    //         box_green.classList.remove('animationgreen');
+            
+    //         player.playerArray = []
+    //         machine.random = []
+
+    //         setTimeout(function () {
+    //             machine.sequenceColors()
+    //             showSequenceColors()
+    //         }, 500)
+    //     })
+
+    // })
 
 }
 

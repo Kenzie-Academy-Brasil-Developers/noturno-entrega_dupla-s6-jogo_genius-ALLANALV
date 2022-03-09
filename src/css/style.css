@@ -12,16 +12,14 @@ section{
     flex-wrap: wrap;
     width: 740px;
 }
-.box_button{
-    justify-content: center;
-}
-section button{
+
+ button{
     color: #fff;
     background-image: linear-gradient(180deg,#008000,#ff0000ed);
-    padding: 10px;
+    padding: 5px;
     border-radius: 15px;
-    width: 300px;
-    font-size: 2rem;
+    width: 150px;
+    font-size: 1rem;
     cursor: pointer;
 }
 
@@ -31,6 +29,7 @@ div{
     height: 225px;
     margin: 10px;
 }
+
 .center{
     background-color: #fff;
     border-radius: 100%;

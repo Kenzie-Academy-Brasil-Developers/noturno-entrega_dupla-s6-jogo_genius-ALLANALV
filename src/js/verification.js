@@ -17,13 +17,18 @@ buttonStart.addEventListener('click', function () {
 
 
 function verification() {
-    if (machine.random.length === player.playerArray.length) {
-
-        for (let counter = 0; counter < machine.random.length; counter++) {
-            if (machine.random[counter].toLowerCase() !== player.playerArray[counter].toLowerCase()) {
+    
+    if (player.playerArray.length <= machine.random.length) {
+            console.log(player.playerArray.length)
+            console.log(machine.random.length)
+        for (let counter = 0; counter < player.playerArray.length; counter++) {
+                if (machine.random[counter].toLowerCase() !== player.playerArray[counter].toLowerCase() ) {
                 endGame()
+                }
             }
         }
+    
+    if (machine.random.length === player.playerArray.length) {
 
         const box_blue = document.getElementById('blue');
         const box_red = document.getElementById('red');
