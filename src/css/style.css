@@ -21,6 +21,7 @@ section{
     width: 150px;
     font-size: 1rem;
     cursor: pointer;
+    
 }
 
 
@@ -40,6 +41,7 @@ div{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .center h1{
     text-align: center;
