@@ -22,12 +22,13 @@ redDiv.addEventListener('click', function() {
 
 greenDiv.addEventListener('click', function() {
     playerArray.push('verde')
-    greenDiv.classList.add('')
+    greenDiv.classList.add('animationgreen')
     verification()
 })
 
 yellowDiv.addEventListener('click', function() {
     playerArray.push('amarelo')
+    yellowDiv.classList.add('animationyellow')
     verification()
 })
 
