@@ -1,3 +1,5 @@
+import { showSequenceColors } from "./base.js";
+
 class Genius {
     constructor() {
         this.random = [];
