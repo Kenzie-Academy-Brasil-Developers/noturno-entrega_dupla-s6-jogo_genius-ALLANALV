@@ -1,5 +1,4 @@
 import { machine } from "./test_machine.js";
-import { player } from "./test_player.js";
 
 const box_blue = document.getElementById('blue');
 const box_red = document.getElementById('red');
@@ -7,21 +6,29 @@ const box_yellow = document.getElementById('yellow');
 const box_green = document.getElementById('green')
 
 function showSequenceColors() {
-    machine.random.forEach((value) => {
+    machine.random.forEach((value, index) => {
         if (value.toLowerCase() === box_blue.id.toLowerCase()) {
-            box_blue.classList.add('animationblue');
+            setTimeout(() => {
+                box_blue.classList.add('animationblue');
+            }, index * 1000)
 
         }
         if (value.toLowerCase() === box_green.id.toLowerCase()) {
-            box_green.classList.add('animationgreen');
+            setTimeout(() => {
+                box_green.classList.add('animationgreen');
+            }, index * 1000)
 
         }
         if (value.toLowerCase() === box_red.id.toLowerCase()) {
-            box_red.classList.add('animationred');
+            setTimeout(() => {
+                box_red.classList.add('animationred');
+            }, index * 1000)
 
         }
         if (value.toLowerCase() === box_yellow.id.toLowerCase()) {
-            box_yellow.classList.add('animationyellow');
+            setTimeout(() => {
+                box_yellow.classList.add('animationyellow');
+            }, index * 1000)
         }
     });
 }
