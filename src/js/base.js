@@ -20,56 +20,87 @@ const box_red = document.getElementById('red');
 const box_yellow = document.getElementById('yellow');
 const box_green = document.getElementById('green')
 
-//function (){} 
 function showSequenceColors() {
     machine.random.forEach((value, index) => {
-        if (value.toLowerCase() === box_blue.id.toLowerCase()) {
-            setTimeout(() => {
-                box_blue.classList.remove('animationblue');
-            }, index * 500)
-
-            setTimeout(() => {
-                box_blue.classList.add('animationblue');
-            }, index * 1000)
-
-        }
-
-        if (value.toLowerCase() === box_green.id.toLowerCase()) {
-            setTimeout(() => {
-                box_green.classList.remove('animationgreen');
-            }, index * 500)
-
-            setTimeout(() => {
-                box_green.classList.add('animationgreen');
-            }, index * 1000)
-
-
-        }
-
-        if (value.toLowerCase() === box_red.id.toLowerCase()) {
-            setTimeout(() => {
-                box_red.classList.remove('animationred');
-            }, index * 500)
-
-
-            setTimeout(() => {
-                box_red.classList.add('animationred');
-            }, index * 1000)
-
-        }
-
-        if (value.toLowerCase() === box_yellow.id.toLowerCase()) {
-            setTimeout(() => {
-                box_yellow.classList.remove('animationyellow');
-            }, index * 500)
-
-            setTimeout(() => {
-                box_yellow.classList.add('animationyellow');
-            }, index * 1000)
-
-        }
+        setTimeout(teste(value, index), 500)
     });
 
+}
+
+function teste(value, index) {
+    if (value.toLowerCase() === box_blue.id.toLowerCase()) {
+        //setTimeout(() => {
+        //    box_blue.classList.remove('animationblue');
+        //}, index * 500)
+        setTimeout(() => {
+            box_blue.classList.replace('darkBlue', 'ligthBlue')
+        }, (index + 1) * 1000)
+
+        setTimeout(() => {
+            box_blue.classList.replace('ligthBlue', 'darkBlue')
+        }, (index + 1) * 1200)
+
+    }
+
+    if (value.toLowerCase() === box_green.id.toLowerCase()) {
+        //setTimeout(() => {
+        //    box_green.classList.remove('animationgreen');
+        //}, index * 500)
+
+        //setTimeout(() => {
+        //    box_green.classList.add('animationgreen');
+        //    box_green.classList.remove('animationgreen')
+        //}, index * 1200)
+        setTimeout(() => {
+            box_green.classList.replace('darkGreen', 'ligthGreen')
+        }, (index + 1) * 1000)
+
+        setTimeout(() => {
+            box_green.classList.replace('ligthGreen', 'darkGreen')
+        }, (index + 1) * 1200)
+
+
+    }
+
+    if (value.toLowerCase() === box_red.id.toLowerCase()) {
+        //setTimeout(() => {
+        //    box_red.classList.remove('animationred');
+        //}, index * 500)
+
+
+        //setTimeout(() => {
+        //    box_red.classList.add('animationred');
+        //    box_red.classList.remove('animationred')
+        //}, (index + 1) * 1200)
+
+        setTimeout(() => {
+            box_red.classList.replace('darkRed', 'ligthRed')
+        }, (index + 1) * 1000)
+
+        setTimeout(() => {
+            box_red.classList.replace('ligthRed', 'darkRed')
+        }, (index + 1) * 1200)
+
+    }
+
+    if (value.toLowerCase() === box_yellow.id.toLowerCase()) {
+        //setTimeout(() => {
+        //    box_yellow.classList.remove('animationyellow');
+        //}, index * 500)
+
+        //setTimeout(() => {
+        //    box_yellow.classList.add('animationyellow');
+        //    box_yellow.classList.remove('animationyellow')
+        //}, (index + 1) * 1200)
+        setTimeout(() => {
+            box_yellow.classList.replace('darkYellow', 'ligthYellow')
+        }, (index + 1) * 1000)
+
+        setTimeout(() => {
+            box_yellow.classList.replace('ligthYellow', 'darkYellow')
+        }, (index + 1) * 1200)
+
+    }
 }
 
 function showAgain() {

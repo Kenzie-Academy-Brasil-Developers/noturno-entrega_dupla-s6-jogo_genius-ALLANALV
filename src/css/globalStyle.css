@@ -4,6 +4,19 @@ body,div,h1,section,form{
     box-sizing: border-box;
 }
 
+
+:root{
+    --background-color-dark_red: #8b0000;
+    --background-color-dark_yellow: #e7d000;
+    --background-color-dark_blue: #00008b; 
+    --background-color-dark_green: #006400;
+
+    --background-color-ligth_green: #04ff04;
+    --background-color-ligth_red: #e90000;
+    --background-color-ligth_blue: #6fb3d3;
+    --background-color-ligth_yellow: #f8fcc9;
+}
+
 @keyframes brigthColorgreen {
     from{
         background-color: #006400;

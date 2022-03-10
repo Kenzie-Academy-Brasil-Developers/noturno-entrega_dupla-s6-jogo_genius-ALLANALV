@@ -79,35 +79,49 @@ div{
     border-bottom-left-radius: 100%;
 }
 
-#blue{
-    background-color: #00008b;
-    transition: 1s background ;
+.darkBlue{
+    background-color: var(--background-color-dark_blue);
+    /*transition: 0.5s background ;*/
 }
-#blue:hover{
+.darkBlue:hover{
     cursor: pointer;
 }
-#red{
-    background-color: #8b0000;
-    transition:  1s background ;
+.darkRed{
+    background-color: var(--background-color-dark_red);
+    /*transition:  0.5s background ;*/
 }
-#red:hover{
+.darkRed:hover{
     cursor: pointer;
 }
 
-#green{
-    background-color: #006400;
-    transition: 1s background ;
+.darkGreen{
+    background-color: var(--background-color-dark_green);
+    /*transition: 0.5s background ;*/
 }
-#green:hover{
+.darkGreen:hover{
    cursor: pointer;
 }
 
-#yellow{
-    background-color: #e7d000;
-    transition:  1s background ;
+.darkYellow{
+    background-color: var(--background-color-dark_yellow);
+    /*transition:  0.5s background ;*/
 }
-#yellow:hover{
+.darkYellow:hover{
     cursor: pointer;
+}
+
+
+.ligthRed{
+    background-color: var(--background-color-ligth_red);
+}
+.ligthBlue{
+    background-color: var(--background-color-ligth_blue);
+}
+.ligthGreen{
+    background-color: var(--background-color-ligth_green);
+}
+.ligthYellow{
+    background-color: var(--background-color-ligth_yellow);
 }
 
 /* ANIMATION */
