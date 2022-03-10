@@ -9,27 +9,57 @@ const box_green = document.getElementById('green')
 function showSequenceColors() {
     machine.random.forEach((value, index) => {
         if (value.toLowerCase() === box_blue.id.toLowerCase()) {
+          
+            setTimeout(() => {
+                box_blue.classList.remove('animationblue');
+            }, index * 500)
+            
+            
             setTimeout(() => {
                 box_blue.classList.add('animationblue');
-            }, index * 1000)
+            }, index * 1500)
+
+            
 
         }
         if (value.toLowerCase() === box_green.id.toLowerCase()) {
+            
+            setTimeout(() => {
+                box_green.classList.remove('animationgreen');
+            }, index * 500)
+            
             setTimeout(() => {
                 box_green.classList.add('animationgreen');
-            }, index * 1000)
+            }, index * 1500)
+
+            
 
         }
         if (value.toLowerCase() === box_red.id.toLowerCase()) {
+
+           setTimeout(() => {
+                box_red.classList.remove('animationred');
+            }, index * 500)
+           
+           
             setTimeout(() => {
                 box_red.classList.add('animationred');
-            }, index * 1000)
+            }, index * 1500)
+
+            
 
         }
         if (value.toLowerCase() === box_yellow.id.toLowerCase()) {
+            
+            setTimeout(() => {
+                box_yellow.classList.remove('animationyellow');
+            }, index * 500)
+            
             setTimeout(() => {
                 box_yellow.classList.add('animationyellow');
-            }, index * 1000)
+            }, index * 1500)
+
+            
         }
     });
 }
