@@ -143,6 +143,9 @@ function showFormAgain() {
 
     const divCenter = document.querySelector('.center')
     divCenter.innerHTML = ""
+    const p = document.createElement('p')
+    divCenter.appendChild(p)
+
     const box_blue = document.getElementById('blue');
     const box_red = document.getElementById('red');
     const box_yellow = document.getElementById('yellow');
