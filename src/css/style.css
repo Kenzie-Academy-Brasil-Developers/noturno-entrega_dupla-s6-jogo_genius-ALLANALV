@@ -26,7 +26,7 @@ section{
 
 
 div{
-    width: 335px;
+    width: 45%;
     height: 225px;
     margin: 10px;
 }
@@ -35,8 +35,10 @@ div{
     background-color: #fff;
     border-radius: 100%;
     position: absolute;
-    left: 41.5%;
-    bottom: 42%;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, 0%);
+    width: 300px;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -124,17 +126,24 @@ div{
     background-color: var(--background-color-ligth_yellow);
 }
 
-/* ANIMATION */
-.animationred{
-    animation: brigthColorred 1s ease-in;
+/* MEDIA QUERIES */
+@media screen and (min-width: 320px){
+    section{
+        justify-content: center;
+    }
+    div{
+        width: 35%;
+
+    }
+    form input{
+        width: 150px;
+    }
+    .center{
+        width: 200px;
+    }
+    .center h1{
+        font-size: 1.2rem;
+        margin-top: 25px;
+    }
 }
-.animationblue{
-    animation: brigthColorblue 1s ease-in;
-}
-.animationyellow{
-    animation: brigthColoryellow 1s ease-in;
-}
-.animationgreen{
-    animation: brigthColorgreen 1s ease-in;
-}
-/* ANIMATION */
+/* MEDIA QUERIES */
