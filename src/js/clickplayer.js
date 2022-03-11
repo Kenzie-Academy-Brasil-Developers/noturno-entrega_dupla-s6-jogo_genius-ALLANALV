@@ -3,6 +3,7 @@ import { verification } from "./verification.js"
 class playerArray {
     constructor() {
         this.playerArray = []
+        this.playerScore = 0
     }
 }
 

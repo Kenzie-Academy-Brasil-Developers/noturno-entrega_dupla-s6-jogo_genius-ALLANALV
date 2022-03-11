@@ -4,6 +4,8 @@ import { player } from "./clickplayer.js";
 
 const buttonStart = document.getElementById('btn-send')
 
+
+
 buttonStart.addEventListener('click', initialGame)
 
 
@@ -22,7 +24,8 @@ function verification() {
     if (machine.random.length === player.playerArray.length) {
         keepGood()
         showAgain()
+        player.playerScore+=1
     }
 }
 
-export { verification }
+export { verification}
