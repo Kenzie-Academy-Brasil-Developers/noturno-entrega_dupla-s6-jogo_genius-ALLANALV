@@ -1,8 +1,6 @@
 import { machine } from "./sequenceColors.js";
 import { player } from "./clickplayer.js";
 
-
-
 function initialGame() {
     const divCenter = document.querySelector('.center')
 
@@ -83,12 +81,6 @@ function teste(value, index) {
 }
 
 function showAgain() {
-
-    box_blue.classList.remove('animationblue');
-    box_red.classList.remove('animationred');
-    box_yellow.classList.remove('animationyellow');
-    box_green.classList.remove('animationgreen');
-
     player.playerArray = []
     setTimeout(function () {
 
