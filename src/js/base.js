@@ -2,12 +2,15 @@ import { machine } from "./sequenceColors.js";
 import { player } from "./clickplayer.js";
 
 
+
 function initialGame() {
     const divCenter = document.querySelector('.center')
 
     divCenter.innerHTML = ""
     const p = document.createElement('p')
+    const span = document.createElement('span')
     divCenter.appendChild(p)
+    divCenter.appendChild(span)
 
     setTimeout(function () {
         machine.sequenceColors()
@@ -22,16 +25,15 @@ const box_green = document.getElementById('green')
 
 function showSequenceColors() {
     machine.random.forEach((value, index) => {
-        setTimeout(teste(value, index), 500)
+        setTimeout(teste(value, index), 400)
     });
 
 }
 
 function teste(value, index) {
+    
     if (value.toLowerCase() === box_blue.id.toLowerCase()) {
-        //setTimeout(() => {
-        //    box_blue.classList.remove('animationblue');
-        //}, index * 500)
+       
         setTimeout(() => {
             box_blue.classList.replace('darkBlue', 'ligthBlue')
         }, (index + 1) * 1000)
@@ -43,14 +45,7 @@ function teste(value, index) {
     }
 
     if (value.toLowerCase() === box_green.id.toLowerCase()) {
-        //setTimeout(() => {
-        //    box_green.classList.remove('animationgreen');
-        //}, index * 500)
-
-        //setTimeout(() => {
-        //    box_green.classList.add('animationgreen');
-        //    box_green.classList.remove('animationgreen')
-        //}, index * 1200)
+       
         setTimeout(() => {
             box_green.classList.replace('darkGreen', 'ligthGreen')
         }, (index + 1) * 1000)
@@ -63,16 +58,7 @@ function teste(value, index) {
     }
 
     if (value.toLowerCase() === box_red.id.toLowerCase()) {
-        //setTimeout(() => {
-        //    box_red.classList.remove('animationred');
-        //}, index * 500)
-
-
-        //setTimeout(() => {
-        //    box_red.classList.add('animationred');
-        //    box_red.classList.remove('animationred')
-        //}, (index + 1) * 1200)
-
+        
         setTimeout(() => {
             box_red.classList.replace('darkRed', 'ligthRed')
         }, (index + 1) * 1000)
@@ -84,14 +70,7 @@ function teste(value, index) {
     }
 
     if (value.toLowerCase() === box_yellow.id.toLowerCase()) {
-        //setTimeout(() => {
-        //    box_yellow.classList.remove('animationyellow');
-        //}, index * 500)
-
-        //setTimeout(() => {
-        //    box_yellow.classList.add('animationyellow');
-        //    box_yellow.classList.remove('animationyellow')
-        //}, (index + 1) * 1200)
+        
         setTimeout(() => {
             box_yellow.classList.replace('darkYellow', 'ligthYellow')
         }, (index + 1) * 1000)
@@ -121,10 +100,14 @@ function showAgain() {
 function endGame() {
     const divCenter = document.querySelector('.center');
     const paragraph = document.querySelector('p');
+    const resultPlayer = document.querySelector('span')
     paragraph.innerHTML = "Você errou a sequência!"
+    resultPlayer.innerHTML = `Número de acertos ${player.playerScore}`
 
     const btn_play_again = document.createElement('button');
     btn_play_again.innerText = 'jogar novamente'
+
+    
 
     divCenter.appendChild(btn_play_again);
 
@@ -175,7 +158,9 @@ function showFormAgain() {
     const divCenter = document.querySelector('.center')
     divCenter.innerHTML = ""
     const p = document.createElement('p')
+    const span = document.createElement('span')
     divCenter.appendChild(p)
+    divCenter.appendChild(span)
 
     const box_blue = document.getElementById('blue');
     const box_red = document.getElementById('red');
@@ -186,9 +171,9 @@ function showFormAgain() {
     box_red.classList.remove('animationred');
     box_yellow.classList.remove('animationyellow');
     box_green.classList.remove('animationgreen');
-
+    player.playerScore = 0
     player.playerArray = []
-
+    
     setTimeout(function () {
         machine.sequenceColors()
         showSequenceColors()
